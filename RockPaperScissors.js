@@ -1,5 +1,5 @@
-            //Rock, Paper, Scissors
-//Created by Zeph Mussman
+//Rock, Paper, Scissors
+//Created by Iceball859
 
 
 
