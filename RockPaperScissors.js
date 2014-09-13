@@ -1,7 +1,5 @@
 //Rock, Paper, Scissors
-//Created by Iceball859
-
-
+//Created by Iceball859, some edits by Red$hadow
 
 //Variables
 var askGameReset;
@@ -23,17 +21,17 @@ do
         var choice1 = prompt("Do you choose Rock, Paper, or Scissors?");
     
         //Finds player's choice
-        if( (choice1 === "rock") || (choice1 === "Rock") || (choice1 === "ROCK") )
+        if( (choice1 === "rock") || (choice1 === "Rock") || (choice1 === "ROCK") || (askGameReset === "r") || (askGameReset === "R"))
         {
             choice1 = "rock";
             playerAnswer = true;
         }
-        if( (choice1 === "paper") || (choice1 === "Paper") || (choice1 === "PAPER") )
+        if( (choice1 === "paper") || (choice1 === "Paper") || (choice1 === "PAPER") || (askGameReset === "p") || (askGameReset === "P"))
         {
             choice1 = "paper";
             playerAnswer = true;
         }
-        if( (choice1 === "scissors") || (choice1 === "Scissors") || (choice1 === "SCISSORS") )
+        if( (choice1 === "scissors") || (choice1 === "Scissors") || (choice1 === "SCISSORS") || (askGameReset === "s") || (askGameReset === "S"))
         {
             choice1 = "scissors";
             playerAnswer = true;
@@ -136,7 +134,7 @@ do
 
     //Asks player if they would like to restart
     var askGameReset = prompt("Would you like to play again?");
-    if((askGameReset === "yes") ||(askGameReset === "Yes") || (askGameReset === "YES"))
+    if((askGameReset === "yes") ||(askGameReset === "Yes") || (askGameReset === "YES") || (askGameReset === "sure") || (askGameReset === "Sure") || (askGameReset === "SURE") || (askGameReset === "Y") || (askGameReset === "y"))
     {
         gameReset = true;
     }
@@ -144,15 +142,14 @@ do
 } while(gameReset !== false);
 
 
-//Rate Game
+//Asks the player if they would like to rate the game.
 var gameRate = prompt("Thank you for playing! Would you like to rate this game?");
 if( (gameRate === "yes") || (gameRate === "Yes") || (gameRate === "YES") )
 {
     do
     {
-        prompt("Please rate in the tab below.");
-        if((gameRate === 1) || (gameRate === 2) || (gameRate === 3) || (gameRate === 4) || (gameRate === 5)
-        || (gameRate === 6) || (gameRate === 7) || (gameRate === 9) || (gameRate === 10) )
+        prompt("Please rate in the tab below on a scale of 1 to 10.");
+        if((gameRate === 1) || (gameRate === 2) || (gameRate === 3) || (gameRate === 4) || (gameRate === 5) || (gameRate === 6) || (gameRate === 7) || (gameRate === 9) || (gameRate === 10) )
         {
             {
                 alert("Thank you for rating!");
@@ -165,3 +162,4 @@ if( (gameRate === "yes") || (gameRate === "Yes") || (gameRate === "YES") )
 
 //Thanks for playing!
 alert("Thank you for playing!");
+alert("If you would like to see more projects made by me, go to the link here! https://github.com/Iceball859/RockPaperScissors")
