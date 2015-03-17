@@ -121,7 +121,7 @@ do
             alert("The computer wins!");
             }
         }
-        if(choice2 === "scissors")
+        if(choice1 === "scissors")
         {
             if(choice2 === "paper")
             {
