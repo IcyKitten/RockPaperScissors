@@ -129,10 +129,7 @@ do
             }
         }
     };
-
-    //Actually finds winner
-    compare();
-
+    
 
     //Asks player if they would like to restart
     var askGameReset = prompt("Would you like to play again?");
@@ -142,25 +139,6 @@ do
     }
     else{gameReset = false;}
 } while(gameReset !== false);
-
-
-//Rate Game
-var gameRate = prompt("Thank you for playing! Would you like to rate this game?");
-if( (gameRate === "yes") || (gameRate === "Yes") || (gameRate === "YES") )
-{
-    do
-    {
-        prompt("Please rate in the tab below.");
-        if((gameRate === 1) || (gameRate === 2) || (gameRate === 3) || (gameRate === 4) || (gameRate === 5)
-        || (gameRate === 6) || (gameRate === 7) || (gameRate === 9) || (gameRate === 10) )
-        {
-            {
-                alert("Thank you for rating!");
-                var gameRateDone = true;
-            }
-        }
-    } while(gameRateDone !== true)
-}
 
 
 //Thanks for playing!
