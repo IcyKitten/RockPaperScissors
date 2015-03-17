@@ -130,6 +130,10 @@ do
         }
     };
     
+    
+    //Actually finds winner
+    compare();
+    
 
     //Asks player if they would like to restart
     var askGameReset = prompt("Would you like to play again?");
